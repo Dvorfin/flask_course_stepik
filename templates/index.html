@@ -8,6 +8,21 @@
 
 <body>
     <p>Hello Flask</p>>
-    <img src="{{ url_for('static', filename='img/1.png')}}" alt="Image" width="240" height="180">
+    <img src="{{ url_for('static', filename='img/1.png')}}" alt="Image" width="500" height="180">
+
+    <form action="" method="post">
+        <p>
+            <label for="message">Message:</label>
+            <input type="text" name="message">
+        </p>
+
+        <p>
+            <input type="submit">
+        </p>
+
+    </form>
+
+    <p>{{ message }}</p>>
+
 </body>
 </html>
